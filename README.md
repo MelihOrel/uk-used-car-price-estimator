@@ -1,14 +1,3 @@
----
-title: UK Used-Car Price Estimator
-emoji: 🚗
-colorFrom: blue
-colorTo: green
-sdk: streamlit
-sdk_version: "1.40.0"
-app_file: app.py
-pinned: false
----
-
 # 🚗 UK Used-Car Price Estimator
 
 **A deployed, interactive ML product — not a notebook.** Enter your car's
@@ -21,7 +10,7 @@ listings** (~99k raw) across 9 brands.
 
 ## 🔴 Live Demo
 
-**👉 Try it now: [LIVE_SPACE_URL — replace after deploying, e.g. `https://huggingface.co/spaces/<user>/uk-car-price-estimator`]**
+**👉 [Try the live app](https://uk-used-car-price-estimator-g2phpxcgiruvdwahjiirso.streamlit.app/)**
 
 ![App screenshot](reports/figures/app_screenshot.png)
 *(screenshot placeholder — capture after first deploy)*
@@ -40,7 +29,7 @@ metrics cell. This one is built like a product:
    scraped feed are merged and cleaned with every action logged.
 2. **A single unified model** across all brands, with quantified uncertainty.
 3. **Explainability in the UI**, not just a notebook figure.
-4. **One-click deployment** to Hugging Face Spaces (free tier).
+4. **One-click deployment** to Streamlit Community Cloud (free tier).
 
 ## 🧹 Data honesty (the messy parts, on purpose)
 
@@ -76,7 +65,7 @@ SHAP (global beeswarm + per-prediction breakdown)     src/explainability.py
    ▼
 Streamlit UI (cached model, filtered dropdowns)       app/app.py
    ▼
-Hugging Face Spaces (app.py entry point, free tier)
+Streamlit Community Cloud (app/app.py, free tier)
 ```
 
 **Why one unified model instead of nine per-brand models?** Depreciation
@@ -135,19 +124,20 @@ Pipeline stages can also be run individually:
 4. Out-of-range inputs (200k+ miles, 20+ year-old cars) trigger explicit
    caution banners instead of silently extrapolating.
 
-## ☁️ Deploying to Hugging Face Spaces (free)
+## ☁️ Deploying to Streamlit Community Cloud (free)
 
-1. Create a Space at <https://huggingface.co/new-space> → SDK **Streamlit**.
-2. Push this repo to the Space (the YAML header at the top of this README is
-   the Space card; `app.py` at the root is the entry point Spaces runs):
-   ```bash
-   git remote add space https://huggingface.co/spaces/<user>/uk-car-price-estimator
-   git push space main
-   ```
-3. Include `models/` and `data/processed/` in the push (or run `python
-   train.py` in a Space build step) — the app loads the trained artefacts,
-   it does not retrain.
-4. Copy the Space URL into the **Live Demo** section above.
+The app is deployed on [Streamlit Community Cloud](https://streamlit.io/cloud),
+which runs Streamlit apps straight from a GitHub repo for free.
+
+1. Push this repo to GitHub (the trained `models/` folder must be included —
+   the app loads artefacts, it does not retrain).
+2. Sign in at <https://share.streamlit.io> with your GitHub account.
+3. **Create app** → pick this repo, branch `main`, main file path
+   **`app/app.py`** → Deploy.
+4. Copy the assigned `*.streamlit.app` URL into the **Live Demo** section above.
+
+> Free-tier notes: ~1 GB RAM (this model is 20 MB, well within limits) and the
+> app sleeps after 12 quiet hours, waking in a few seconds on the next visit.
 
 ## ⚠️ Limitations
 
@@ -163,7 +153,7 @@ Pipeline stages can also be run individually:
 
 ```
 uk-used-car-price-estimator/
-├── app.py                     # HF Spaces entry point (runs app/app.py)
+├── app.py                     # optional entry point (runs app/app.py)
 ├── train.py                   # end-to-end training pipeline
 ├── config.yaml                # paths, features, hyperparameters
 ├── requirements.txt
