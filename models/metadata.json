@@ -1,0 +1,1244 @@
+{
+  "trained_at": "2026-07-28 19:14:49",
+  "lightgbm_version": "4.7.0",
+  "python_version": "3.13.2",
+  "n_listings": 97709,
+  "brands": [
+    "audi",
+    "bmw",
+    "ford",
+    "hyundai",
+    "mercedes",
+    "skoda",
+    "toyota",
+    "vauxhall",
+    "volkswagen"
+  ],
+  "brand_models": {
+    "audi": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "A7",
+      "A8",
+      "Q2",
+      "Q3",
+      "Q5",
+      "Q7",
+      "Q8",
+      "R8",
+      "RS3",
+      "RS4",
+      "RS5",
+      "RS6",
+      "RS7",
+      "S3",
+      "S4",
+      "S5",
+      "S8",
+      "SQ5",
+      "SQ7",
+      "TT"
+    ],
+    "bmw": [
+      "1 Series",
+      "2 Series",
+      "3 Series",
+      "4 Series",
+      "5 Series",
+      "6 Series",
+      "7 Series",
+      "8 Series",
+      "M2",
+      "M3",
+      "M4",
+      "M5",
+      "M6",
+      "X1",
+      "X2",
+      "X3",
+      "X4",
+      "X5",
+      "X6",
+      "X7",
+      "Z3",
+      "Z4",
+      "i3",
+      "i8"
+    ],
+    "ford": [
+      "B-MAX",
+      "C-MAX",
+      "EcoSport",
+      "Edge",
+      "Escort",
+      "Fiesta",
+      "Focus",
+      "Fusion",
+      "Galaxy",
+      "Grand C-MAX",
+      "Grand Tourneo Connect",
+      "KA",
+      "Ka+",
+      "Kuga",
+      "Mondeo",
+      "Mustang",
+      "Puma",
+      "Ranger",
+      "S-MAX",
+      "Streetka",
+      "Tourneo Connect",
+      "Tourneo Custom",
+      "Transit Tourneo"
+    ],
+    "hyundai": [
+      "Accent",
+      "Amica",
+      "Getz",
+      "I10",
+      "I20",
+      "I30",
+      "I40",
+      "I800",
+      "IX20",
+      "IX35",
+      "Ioniq",
+      "Kona",
+      "Santa Fe",
+      "Terracan",
+      "Tucson",
+      "Veloster"
+    ],
+    "mercedes": [
+      "180",
+      "200",
+      "220",
+      "230",
+      "A Class",
+      "B Class",
+      "C Class",
+      "CL Class",
+      "CLA Class",
+      "CLC Class",
+      "CLK",
+      "CLS Class",
+      "E Class",
+      "G Class",
+      "GL Class",
+      "GLA Class",
+      "GLB Class",
+      "GLC Class",
+      "GLE Class",
+      "GLS Class",
+      "M Class",
+      "R Class",
+      "S Class",
+      "SL CLASS",
+      "SLK",
+      "V Class",
+      "X-CLASS"
+    ],
+    "skoda": [
+      "Citigo",
+      "Fabia",
+      "Kamiq",
+      "Karoq",
+      "Kodiaq",
+      "Octavia",
+      "Rapid",
+      "Roomster",
+      "Scala",
+      "Superb",
+      "Yeti",
+      "Yeti Outdoor"
+    ],
+    "toyota": [
+      "Auris",
+      "Avensis",
+      "Aygo",
+      "C-HR",
+      "Camry",
+      "Corolla",
+      "GT86",
+      "Hilux",
+      "IQ",
+      "Land Cruiser",
+      "PROACE VERSO",
+      "Prius",
+      "RAV4",
+      "Supra",
+      "Urban Cruiser",
+      "Verso",
+      "Verso-S",
+      "Yaris"
+    ],
+    "vauxhall": [
+      "Adam",
+      "Agila",
+      "Ampera",
+      "Antara",
+      "Astra",
+      "Cascada",
+      "Combo Life",
+      "Corsa",
+      "Crossland X",
+      "GTC",
+      "Grandland X",
+      "Insignia",
+      "Kadjar",
+      "Meriva",
+      "Mokka",
+      "Mokka X",
+      "Tigra",
+      "Vectra",
+      "Viva",
+      "Vivaro",
+      "Zafira",
+      "Zafira Tourer"
+    ],
+    "volkswagen": [
+      "Amarok",
+      "Arteon",
+      "Beetle",
+      "CC",
+      "Caddy",
+      "Caddy Life",
+      "Caddy Maxi",
+      "Caddy Maxi Life",
+      "California",
+      "Caravelle",
+      "Eos",
+      "Fox",
+      "Golf",
+      "Golf SV",
+      "Jetta",
+      "Passat",
+      "Polo",
+      "Scirocco",
+      "Sharan",
+      "Shuttle",
+      "T-Cross",
+      "T-Roc",
+      "Tiguan",
+      "Tiguan Allspace",
+      "Touareg",
+      "Touran",
+      "Up"
+    ]
+  },
+  "input_ranges": {
+    "year": [
+      1996,
+      2020
+    ],
+    "mileage": [
+      0,
+      323000
+    ],
+    "engineSize": [
+      0.6,
+      6.6
+    ],
+    "tax": [
+      0.0,
+      580.0
+    ],
+    "mpg": [
+      0.3,
+      470.8
+    ]
+  },
+  "transmissions": [
+    "Automatic",
+    "Manual",
+    "Other",
+    "Semi-Auto"
+  ],
+  "fuel_types": [
+    "Diesel",
+    "Electric",
+    "Hybrid",
+    "Other",
+    "Petrol"
+  ],
+  "medians_by_brand_model": {
+    "audi||A1": {
+      "tax": 30.0,
+      "mpg": 56.5,
+      "engineSize": 1.4
+    },
+    "audi||A2": {
+      "tax": 30.0,
+      "mpg": 65.7,
+      "engineSize": 1.4
+    },
+    "audi||A3": {
+      "tax": 145.0,
+      "mpg": 56.5,
+      "engineSize": 1.6
+    },
+    "audi||A4": {
+      "tax": 145.0,
+      "mpg": 52.3,
+      "engineSize": 2.0
+    },
+    "audi||A5": {
+      "tax": 145.0,
+      "mpg": 50.4,
+      "engineSize": 2.0
+    },
+    "audi||A6": {
+      "tax": 145.0,
+      "mpg": 56.5,
+      "engineSize": 2.0
+    },
+    "audi||A7": {
+      "tax": 145.0,
+      "mpg": 48.3,
+      "engineSize": 3.0
+    },
+    "audi||A8": {
+      "tax": 145.0,
+      "mpg": 47.1,
+      "engineSize": 3.0
+    },
+    "audi||Q2": {
+      "tax": 145.0,
+      "mpg": 48.8,
+      "engineSize": 1.5
+    },
+    "audi||Q3": {
+      "tax": 145.0,
+      "mpg": 47.9,
+      "engineSize": 2.0
+    },
+    "audi||Q5": {
+      "tax": 145.0,
+      "mpg": 39.2,
+      "engineSize": 2.0
+    },
+    "audi||Q7": {
+      "tax": 145.0,
+      "mpg": 33.6,
+      "engineSize": 3.0
+    },
+    "audi||Q8": {
+      "tax": 145.0,
+      "mpg": 33.6,
+      "engineSize": 3.0
+    },
+    "audi||R8": {
+      "tax": 145.0,
+      "mpg": 21.6,
+      "engineSize": 5.2
+    },
+    "audi||RS3": {
+      "tax": 150.0,
+      "mpg": 34.0,
+      "engineSize": 2.5
+    },
+    "audi||RS4": {
+      "tax": 145.0,
+      "mpg": 29.1,
+      "engineSize": 2.9
+    },
+    "audi||RS5": {
+      "tax": 145.0,
+      "mpg": 30.1,
+      "engineSize": 2.9
+    },
+    "audi||RS6": {
+      "tax": 325.0,
+      "mpg": 29.4,
+      "engineSize": 4.0
+    },
+    "audi||RS7": {
+      "tax": 555.0,
+      "mpg": 28.8,
+      "engineSize": 4.0
+    },
+    "audi||S3": {
+      "tax": 200.0,
+      "mpg": 40.9,
+      "engineSize": 2.0
+    },
+    "audi||S4": {
+      "tax": 145.0,
+      "mpg": 39.2,
+      "engineSize": 3.0
+    },
+    "audi||S5": {
+      "tax": 300.0,
+      "mpg": 34.9,
+      "engineSize": 3.0
+    },
+    "audi||S8": {
+      "tax": 315.0,
+      "mpg": 30.1,
+      "engineSize": 4.0
+    },
+    "audi||SQ5": {
+      "tax": 192.5,
+      "mpg": 38.0,
+      "engineSize": 3.0
+    },
+    "audi||SQ7": {
+      "tax": 145.0,
+      "mpg": 39.2,
+      "engineSize": 4.0
+    },
+    "audi||TT": {
+      "tax": 145.0,
+      "mpg": 44.1,
+      "engineSize": 2.0
+    },
+    "bmw||1 Series": {
+      "tax": 145.0,
+      "mpg": 57.7,
+      "engineSize": 2.0
+    },
+    "bmw||2 Series": {
+      "tax": 145.0,
+      "mpg": 51.4,
+      "engineSize": 2.0
+    },
+    "bmw||3 Series": {
+      "tax": 145.0,
+      "mpg": 54.3,
+      "engineSize": 2.0
+    },
+    "bmw||4 Series": {
+      "tax": 145.0,
+      "mpg": 55.4,
+      "engineSize": 2.0
+    },
+    "bmw||5 Series": {
+      "tax": 145.0,
+      "mpg": 60.1,
+      "engineSize": 2.0
+    },
+    "bmw||6 Series": {
+      "tax": 160.0,
+      "mpg": 49.6,
+      "engineSize": 3.0
+    },
+    "bmw||7 Series": {
+      "tax": 145.0,
+      "mpg": 42.2,
+      "engineSize": 3.0
+    },
+    "bmw||8 Series": {
+      "tax": 145.0,
+      "mpg": 33.2,
+      "engineSize": 3.0
+    },
+    "bmw||M2": {
+      "tax": 145.0,
+      "mpg": 29.1,
+      "engineSize": 3.0
+    },
+    "bmw||M3": {
+      "tax": 302.5,
+      "mpg": 34.0,
+      "engineSize": 3.0
+    },
+    "bmw||M4": {
+      "tax": 145.0,
+      "mpg": 34.0,
+      "engineSize": 3.0
+    },
+    "bmw||M5": {
+      "tax": 145.0,
+      "mpg": 26.9,
+      "engineSize": 4.4
+    },
+    "bmw||M6": {
+      "tax": 555.0,
+      "mpg": 28.5,
+      "engineSize": 4.4
+    },
+    "bmw||X1": {
+      "tax": 145.0,
+      "mpg": 57.6,
+      "engineSize": 2.0
+    },
+    "bmw||X2": {
+      "tax": 145.0,
+      "mpg": 48.7,
+      "engineSize": 2.0
+    },
+    "bmw||X3": {
+      "tax": 145.0,
+      "mpg": 54.3,
+      "engineSize": 2.0
+    },
+    "bmw||X4": {
+      "tax": 145.0,
+      "mpg": 42.8,
+      "engineSize": 3.0
+    },
+    "bmw||X5": {
+      "tax": 145.0,
+      "mpg": 37.7,
+      "engineSize": 3.0
+    },
+    "bmw||X6": {
+      "tax": 145.0,
+      "mpg": 37.2,
+      "engineSize": 3.0
+    },
+    "bmw||X7": {
+      "tax": 145.0,
+      "mpg": 33.6,
+      "engineSize": 3.0
+    },
+    "bmw||Z3": {
+      "tax": 270.0,
+      "mpg": 35.3,
+      "engineSize": 1.9
+    },
+    "bmw||Z4": {
+      "tax": 145.0,
+      "mpg": 38.7,
+      "engineSize": 2.0
+    },
+    "bmw||i3": {
+      "tax": 0.0,
+      "mpg": 470.8,
+      "engineSize": 0.6
+    },
+    "bmw||i8": {
+      "tax": 135.0,
+      "mpg": 134.5,
+      "engineSize": 1.5
+    },
+    "ford||B-MAX": {
+      "tax": 145.0,
+      "mpg": 55.4,
+      "engineSize": 1.4
+    },
+    "ford||C-MAX": {
+      "tax": 30.0,
+      "mpg": 61.4,
+      "engineSize": 1.5
+    },
+    "ford||EcoSport": {
+      "tax": 145.0,
+      "mpg": 53.3,
+      "engineSize": 1.0
+    },
+    "ford||Edge": {
+      "tax": 150.0,
+      "mpg": 47.9,
+      "engineSize": 2.0
+    },
+    "ford||Escort": {
+      "tax": 265.0,
+      "mpg": 34.4,
+      "engineSize": 1.8
+    },
+    "ford||Fiesta": {
+      "tax": 145.0,
+      "mpg": 62.8,
+      "engineSize": 1.0
+    },
+    "ford||Focus": {
+      "tax": 145.0,
+      "mpg": 60.1,
+      "engineSize": 1.5
+    },
+    "ford||Fusion": {
+      "tax": 200.0,
+      "mpg": 42.8,
+      "engineSize": 1.4
+    },
+    "ford||Galaxy": {
+      "tax": 145.0,
+      "mpg": 55.4,
+      "engineSize": 2.0
+    },
+    "ford||Grand C-MAX": {
+      "tax": 30.0,
+      "mpg": 58.9,
+      "engineSize": 1.5
+    },
+    "ford||Grand Tourneo Connect": {
+      "tax": 125.0,
+      "mpg": 61.4,
+      "engineSize": 1.5
+    },
+    "ford||KA": {
+      "tax": 30.0,
+      "mpg": 57.7,
+      "engineSize": 1.2
+    },
+    "ford||Ka+": {
+      "tax": 145.0,
+      "mpg": 57.7,
+      "engineSize": 1.2
+    },
+    "ford||Kuga": {
+      "tax": 145.0,
+      "mpg": 54.3,
+      "engineSize": 2.0
+    },
+    "ford||Mondeo": {
+      "tax": 135.0,
+      "mpg": 62.8,
+      "engineSize": 2.0
+    },
+    "ford||Mustang": {
+      "tax": 145.0,
+      "mpg": 22.8,
+      "engineSize": 5.0
+    },
+    "ford||Puma": {
+      "tax": 145.0,
+      "mpg": 50.4,
+      "engineSize": 1.0
+    },
+    "ford||Ranger": {
+      "tax": 240.0,
+      "mpg": 28.3,
+      "engineSize": 3.2
+    },
+    "ford||S-MAX": {
+      "tax": 145.0,
+      "mpg": 54.3,
+      "engineSize": 2.0
+    },
+    "ford||Streetka": {
+      "tax": 280.0,
+      "mpg": 35.6,
+      "engineSize": 1.6
+    },
+    "ford||Tourneo Connect": {
+      "tax": 125.0,
+      "mpg": 61.4,
+      "engineSize": 1.5
+    },
+    "ford||Tourneo Custom": {
+      "tax": 145.0,
+      "mpg": 42.2,
+      "engineSize": 2.0
+    },
+    "ford||Transit Tourneo": {
+      "tax": 235.0,
+      "mpg": 42.2,
+      "engineSize": 2.2
+    },
+    "hyundai||Accent": {
+      "tax": 150.0,
+      "mpg": 38.7,
+      "engineSize": 1.3
+    },
+    "hyundai||Amica": {
+      "tax": 160.0,
+      "mpg": 46.3,
+      "engineSize": 1.1
+    },
+    "hyundai||Getz": {
+      "tax": 125.0,
+      "mpg": 51.4,
+      "engineSize": 1.1
+    },
+    "hyundai||I10": {
+      "tax": 145.0,
+      "mpg": 60.1,
+      "engineSize": 1.0
+    },
+    "hyundai||I20": {
+      "tax": 145.0,
+      "mpg": 55.4,
+      "engineSize": 1.2
+    },
+    "hyundai||I30": {
+      "tax": 145.0,
+      "mpg": 56.5,
+      "engineSize": 1.6
+    },
+    "hyundai||I40": {
+      "tax": 125.0,
+      "mpg": 65.7,
+      "engineSize": 1.7
+    },
+    "hyundai||I800": {
+      "tax": 145.0,
+      "mpg": 31.7,
+      "engineSize": 2.5
+    },
+    "hyundai||IX20": {
+      "tax": 145.0,
+      "mpg": 50.4,
+      "engineSize": 1.4
+    },
+    "hyundai||IX35": {
+      "tax": 150.0,
+      "mpg": 53.3,
+      "engineSize": 1.7
+    },
+    "hyundai||Ioniq": {
+      "tax": 135.0,
+      "mpg": 78.5,
+      "engineSize": 1.6
+    },
+    "hyundai||Kona": {
+      "tax": 145.0,
+      "mpg": 44.1,
+      "engineSize": 1.0
+    },
+    "hyundai||Santa Fe": {
+      "tax": 147.5,
+      "mpg": 42.2,
+      "engineSize": 2.2
+    },
+    "hyundai||Terracan": {
+      "tax": 325.0,
+      "mpg": 32.8,
+      "engineSize": 2.9
+    },
+    "hyundai||Tucson": {
+      "tax": 145.0,
+      "mpg": 54.3,
+      "engineSize": 1.7
+    },
+    "hyundai||Veloster": {
+      "tax": 160.0,
+      "mpg": 43.5,
+      "engineSize": 1.6
+    },
+    "mercedes||180": {
+      "tax": 20.0,
+      "mpg": 72.4,
+      "engineSize": 1.5
+    },
+    "mercedes||200": {
+      "tax": 145.0,
+      "mpg": 64.2,
+      "engineSize": 2.2
+    },
+    "mercedes||220": {
+      "tax": 145.0,
+      "mpg": 61.4,
+      "engineSize": 2.0
+    },
+    "mercedes||230": {
+      "tax": 520.0,
+      "mpg": 29.4,
+      "engineSize": null
+    },
+    "mercedes||A Class": {
+      "tax": 145.0,
+      "mpg": 64.2,
+      "engineSize": 1.5
+    },
+    "mercedes||B Class": {
+      "tax": 145.0,
+      "mpg": 55.4,
+      "engineSize": 1.6
+    },
+    "mercedes||C Class": {
+      "tax": 145.0,
+      "mpg": 57.7,
+      "engineSize": 2.0
+    },
+    "mercedes||CL Class": {
+      "tax": 145.0,
+      "mpg": 51.8,
+      "engineSize": 2.1
+    },
+    "mercedes||CLA Class": {
+      "tax": 145.0,
+      "mpg": 54.4,
+      "engineSize": 2.1
+    },
+    "mercedes||CLC Class": {
+      "tax": 300.0,
+      "mpg": 35.8,
+      "engineSize": 1.6
+    },
+    "mercedes||CLK": {
+      "tax": 300.0,
+      "mpg": 39.2,
+      "engineSize": 2.7
+    },
+    "mercedes||CLS Class": {
+      "tax": 145.0,
+      "mpg": 49.6,
+      "engineSize": 2.9
+    },
+    "mercedes||E Class": {
+      "tax": 145.0,
+      "mpg": 58.9,
+      "engineSize": 2.0
+    },
+    "mercedes||G Class": {
+      "tax": 150.0,
+      "mpg": 21.4,
+      "engineSize": 4.0
+    },
+    "mercedes||GL Class": {
+      "tax": 145.0,
+      "mpg": 55.4,
+      "engineSize": 2.1
+    },
+    "mercedes||GLA Class": {
+      "tax": 145.0,
+      "mpg": 56.5,
+      "engineSize": 2.1
+    },
+    "mercedes||GLB Class": {
+      "tax": 145.0,
+      "mpg": 46.3,
+      "engineSize": 2.0
+    },
+    "mercedes||GLC Class": {
+      "tax": 145.0,
+      "mpg": 56.5,
+      "engineSize": 2.1
+    },
+    "mercedes||GLE Class": {
+      "tax": 145.0,
+      "mpg": 39.2,
+      "engineSize": 3.0
+    },
+    "mercedes||GLS Class": {
+      "tax": 145.0,
+      "mpg": 37.2,
+      "engineSize": 3.0
+    },
+    "mercedes||M Class": {
+      "tax": 252.5,
+      "mpg": 39.2,
+      "engineSize": 2.4
+    },
+    "mercedes||R Class": {
+      "tax": 445.0,
+      "mpg": 31.8,
+      "engineSize": 3.0
+    },
+    "mercedes||S Class": {
+      "tax": 145.0,
+      "mpg": 48.7,
+      "engineSize": 3.0
+    },
+    "mercedes||SL CLASS": {
+      "tax": 145.0,
+      "mpg": 47.1,
+      "engineSize": 2.1
+    },
+    "mercedes||SLK": {
+      "tax": 150.0,
+      "mpg": 56.5,
+      "engineSize": 2.0
+    },
+    "mercedes||V Class": {
+      "tax": 145.0,
+      "mpg": 45.6,
+      "engineSize": 2.1
+    },
+    "mercedes||X-CLASS": {
+      "tax": 260.0,
+      "mpg": 35.8,
+      "engineSize": 2.3
+    },
+    "skoda||Citigo": {
+      "tax": 20.0,
+      "mpg": 64.2,
+      "engineSize": 1.0
+    },
+    "skoda||Fabia": {
+      "tax": 145.0,
+      "mpg": 60.1,
+      "engineSize": 1.0
+    },
+    "skoda||Kamiq": {
+      "tax": 145.0,
+      "mpg": 47.1,
+      "engineSize": 1.5
+    },
+    "skoda||Karoq": {
+      "tax": 145.0,
+      "mpg": 50.4,
+      "engineSize": 1.5
+    },
+    "skoda||Kodiaq": {
+      "tax": 145.0,
+      "mpg": 39.8,
+      "engineSize": 2.0
+    },
+    "skoda||Octavia": {
+      "tax": 145.0,
+      "mpg": 58.9,
+      "engineSize": 1.6
+    },
+    "skoda||Rapid": {
+      "tax": 125.0,
+      "mpg": 61.4,
+      "engineSize": 1.2
+    },
+    "skoda||Roomster": {
+      "tax": 145.0,
+      "mpg": 49.6,
+      "engineSize": 1.2
+    },
+    "skoda||Scala": {
+      "tax": 145.0,
+      "mpg": 49.6,
+      "engineSize": 1.0
+    },
+    "skoda||Superb": {
+      "tax": 145.0,
+      "mpg": 57.7,
+      "engineSize": 2.0
+    },
+    "skoda||Yeti": {
+      "tax": 125.0,
+      "mpg": 51.4,
+      "engineSize": 1.2
+    },
+    "skoda||Yeti Outdoor": {
+      "tax": 125.0,
+      "mpg": 51.4,
+      "engineSize": 1.2
+    },
+    "toyota||Auris": {
+      "tax": 0.0,
+      "mpg": 72.4,
+      "engineSize": 1.8
+    },
+    "toyota||Avensis": {
+      "tax": 145.0,
+      "mpg": 61.4,
+      "engineSize": 1.8
+    },
+    "toyota||Aygo": {
+      "tax": 145.0,
+      "mpg": 68.9,
+      "engineSize": 1.0
+    },
+    "toyota||C-HR": {
+      "tax": 135.0,
+      "mpg": 74.3,
+      "engineSize": 1.8
+    },
+    "toyota||Camry": {
+      "tax": 135.0,
+      "mpg": 52.3,
+      "engineSize": 2.5
+    },
+    "toyota||Corolla": {
+      "tax": 135.0,
+      "mpg": 72.4,
+      "engineSize": 1.8
+    },
+    "toyota||GT86": {
+      "tax": 145.0,
+      "mpg": 36.2,
+      "engineSize": 2.0
+    },
+    "toyota||Hilux": {
+      "tax": 260.0,
+      "mpg": 36.2,
+      "engineSize": 2.4
+    },
+    "toyota||IQ": {
+      "tax": 10.0,
+      "mpg": 62.2,
+      "engineSize": 1.0
+    },
+    "toyota||Land Cruiser": {
+      "tax": 150.0,
+      "mpg": 30.1,
+      "engineSize": 2.8
+    },
+    "toyota||PROACE VERSO": {
+      "tax": 145.0,
+      "mpg": 38.7,
+      "engineSize": 2.0
+    },
+    "toyota||Prius": {
+      "tax": 0.0,
+      "mpg": 85.6,
+      "engineSize": 1.8
+    },
+    "toyota||RAV4": {
+      "tax": 135.0,
+      "mpg": 55.4,
+      "engineSize": 2.2
+    },
+    "toyota||Supra": {
+      "tax": 145.0,
+      "mpg": 34.5,
+      "engineSize": 3.0
+    },
+    "toyota||Urban Cruiser": {
+      "tax": 125.0,
+      "mpg": 50.4,
+      "engineSize": 1.3
+    },
+    "toyota||Verso": {
+      "tax": 160.0,
+      "mpg": 42.8,
+      "engineSize": 1.6
+    },
+    "toyota||Verso-S": {
+      "tax": 125.0,
+      "mpg": 51.4,
+      "engineSize": 1.3
+    },
+    "toyota||Yaris": {
+      "tax": 135.0,
+      "mpg": 58.0,
+      "engineSize": 1.5
+    },
+    "vauxhall||Adam": {
+      "tax": 125.0,
+      "mpg": 53.3,
+      "engineSize": 1.2
+    },
+    "vauxhall||Agila": {
+      "tax": 135.0,
+      "mpg": 51.4,
+      "engineSize": 1.2
+    },
+    "vauxhall||Ampera": {
+      "tax": 0.0,
+      "mpg": 235.4,
+      "engineSize": 1.4
+    },
+    "vauxhall||Antara": {
+      "tax": 240.0,
+      "mpg": 44.1,
+      "engineSize": 2.2
+    },
+    "vauxhall||Astra": {
+      "tax": 145.0,
+      "mpg": 51.4,
+      "engineSize": 1.4
+    },
+    "vauxhall||Cascada": {
+      "tax": 127.5,
+      "mpg": 56.0,
+      "engineSize": 2.0
+    },
+    "vauxhall||Combo Life": {
+      "tax": 145.0,
+      "mpg": 53.3,
+      "engineSize": 1.5
+    },
+    "vauxhall||Corsa": {
+      "tax": 145.0,
+      "mpg": 54.3,
+      "engineSize": 1.4
+    },
+    "vauxhall||Crossland X": {
+      "tax": 145.0,
+      "mpg": 47.1,
+      "engineSize": 1.2
+    },
+    "vauxhall||GTC": {
+      "tax": 160.0,
+      "mpg": 47.1,
+      "engineSize": 1.4
+    },
+    "vauxhall||Grandland X": {
+      "tax": 145.0,
+      "mpg": 48.7,
+      "engineSize": 1.2
+    },
+    "vauxhall||Insignia": {
+      "tax": 145.0,
+      "mpg": 54.3,
+      "engineSize": 1.6
+    },
+    "vauxhall||Kadjar": {
+      "tax": 145.0,
+      "mpg": 42.2,
+      "engineSize": 1.3
+    },
+    "vauxhall||Meriva": {
+      "tax": 145.0,
+      "mpg": 47.1,
+      "engineSize": 1.4
+    },
+    "vauxhall||Mokka": {
+      "tax": 160.0,
+      "mpg": 44.8,
+      "engineSize": 1.6
+    },
+    "vauxhall||Mokka X": {
+      "tax": 145.0,
+      "mpg": 42.2,
+      "engineSize": 1.4
+    },
+    "vauxhall||Tigra": {
+      "tax": 165.0,
+      "mpg": 46.3,
+      "engineSize": 1.4
+    },
+    "vauxhall||Vectra": {
+      "tax": 237.5,
+      "mpg": 39.0,
+      "engineSize": 1.8
+    },
+    "vauxhall||Viva": {
+      "tax": 145.0,
+      "mpg": 62.8,
+      "engineSize": 1.0
+    },
+    "vauxhall||Vivaro": {
+      "tax": 160.0,
+      "mpg": 49.6,
+      "engineSize": 1.6
+    },
+    "vauxhall||Zafira": {
+      "tax": 200.0,
+      "mpg": 42.2,
+      "engineSize": 1.4
+    },
+    "vauxhall||Zafira Tourer": {
+      "tax": 200.0,
+      "mpg": 42.2,
+      "engineSize": 1.4
+    },
+    "volkswagen||Amarok": {
+      "tax": 260.0,
+      "mpg": 35.3,
+      "engineSize": 3.0
+    },
+    "volkswagen||Arteon": {
+      "tax": 145.0,
+      "mpg": 47.1,
+      "engineSize": 2.0
+    },
+    "volkswagen||Beetle": {
+      "tax": 145.0,
+      "mpg": 50.4,
+      "engineSize": 1.6
+    },
+    "volkswagen||CC": {
+      "tax": 125.0,
+      "mpg": 58.9,
+      "engineSize": 2.0
+    },
+    "volkswagen||Caddy": {
+      "tax": 152.5,
+      "mpg": 55.4,
+      "engineSize": 2.0
+    },
+    "volkswagen||Caddy Life": {
+      "tax": 145.0,
+      "mpg": 51.4,
+      "engineSize": 2.0
+    },
+    "volkswagen||Caddy Maxi": {
+      "tax": 180.0,
+      "mpg": 50.5,
+      "engineSize": 1.6
+    },
+    "volkswagen||Caddy Maxi Life": {
+      "tax": 145.0,
+      "mpg": 48.7,
+      "engineSize": 2.0
+    },
+    "volkswagen||California": {
+      "tax": 260.0,
+      "mpg": 33.2,
+      "engineSize": 2.0
+    },
+    "volkswagen||Caravelle": {
+      "tax": 145.0,
+      "mpg": 33.6,
+      "engineSize": 2.0
+    },
+    "volkswagen||Eos": {
+      "tax": 185.0,
+      "mpg": 48.0,
+      "engineSize": 2.0
+    },
+    "volkswagen||Fox": {
+      "tax": 147.5,
+      "mpg": 46.3,
+      "engineSize": 1.2
+    },
+    "volkswagen||Golf": {
+      "tax": 145.0,
+      "mpg": 53.3,
+      "engineSize": 1.6
+    },
+    "volkswagen||Golf SV": {
+      "tax": 145.0,
+      "mpg": 54.3,
+      "engineSize": 1.5
+    },
+    "volkswagen||Jetta": {
+      "tax": 20.0,
+      "mpg": 67.3,
+      "engineSize": 2.0
+    },
+    "volkswagen||Passat": {
+      "tax": 140.0,
+      "mpg": 60.1,
+      "engineSize": 2.0
+    },
+    "volkswagen||Polo": {
+      "tax": 145.0,
+      "mpg": 60.1,
+      "engineSize": 1.2
+    },
+    "volkswagen||Scirocco": {
+      "tax": 125.0,
+      "mpg": 53.3,
+      "engineSize": 2.0
+    },
+    "volkswagen||Sharan": {
+      "tax": 145.0,
+      "mpg": 42.2,
+      "engineSize": 2.0
+    },
+    "volkswagen||Shuttle": {
+      "tax": 145.0,
+      "mpg": 45.6,
+      "engineSize": 2.0
+    },
+    "volkswagen||T-Cross": {
+      "tax": 145.0,
+      "mpg": 47.9,
+      "engineSize": 1.0
+    },
+    "volkswagen||T-Roc": {
+      "tax": 145.0,
+      "mpg": 49.6,
+      "engineSize": 1.6
+    },
+    "volkswagen||Tiguan": {
+      "tax": 145.0,
+      "mpg": 47.9,
+      "engineSize": 2.0
+    },
+    "volkswagen||Tiguan Allspace": {
+      "tax": 145.0,
+      "mpg": 39.2,
+      "engineSize": 2.0
+    },
+    "volkswagen||Touareg": {
+      "tax": 145.0,
+      "mpg": 34.9,
+      "engineSize": 3.0
+    },
+    "volkswagen||Touran": {
+      "tax": 145.0,
+      "mpg": 60.1,
+      "engineSize": 1.6
+    },
+    "volkswagen||Up": {
+      "tax": 20.0,
+      "mpg": 62.8,
+      "engineSize": 1.0
+    }
+  }
+}

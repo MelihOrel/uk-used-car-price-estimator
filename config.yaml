@@ -1,0 +1,79 @@
+# =====================================================================
+# UK Used-Car Price Estimator — central configuration
+# All paths are relative to the repository root.
+# =====================================================================
+
+paths:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  clean_dataset: data/processed/cars_clean.parquet
+  models_dir: models
+  figures_dir: reports/figures
+  metrics_file: models/metrics.json
+  model_metadata: models/metadata.json
+
+data:
+  # Full-schema brand files: model, year, price, transmission, mileage,
+  # fuelType, tax, mpg, engineSize
+  brand_files:
+    audi: audi.csv
+    bmw: bmw.csv
+    ford: ford.csv
+    hyundai: hyundi.csv          # note: file misspells the brand; tax column is 'tax(£)'
+    mercedes: merc.csv
+    skoda: skoda.csv
+    toyota: toyota.csv
+    vauxhall: vauxhall.csv
+    volkswagen: vw.csv
+  # Reduced-schema files (no tax / mpg). They duplicate listings already
+  # present in ford.csv / merc.csv, so they are EXCLUDED from training by
+  # default and kept only to document the schema-reconciliation logic.
+  reduced_files:
+    ford: focus.csv
+    mercedes: cclass.csv
+  include_reduced_files: false
+  # Raw scraped files used to demonstrate the cleaning pipeline
+  unclean_files:
+    - unclean_focus.csv
+    - unclean_cclass.csv
+
+cleaning:
+  year_min: 1990          # below this -> implausible listing year
+  year_max: 2021          # dataset was scraped in 2020; 2060 typos exist
+  mileage_max: 400000     # miles; above this -> implausible
+  price_min: 100          # GBP; below this -> data error
+  price_max: 200000       # GBP; above this -> exotic outlier, out of scope
+  engine_size_max: 7.0    # litres; above this -> data error
+  # engineSize == 0 means "missing encoded as zero" -> set to NaN
+
+features:
+  target: price
+  categorical: [brand, model, transmission, fuelType]
+  numeric: [year, mileage, tax, mpg, engineSize, car_age]
+  engineered:
+    car_age: "reference_year - year (reference_year = 2020, the scrape year)"
+  reference_year: 2020
+
+split:
+  test_size: 0.15
+  val_size: 0.15          # fraction of the FULL dataset used for validation
+  random_state: 42
+
+model:
+  # Shared LightGBM parameters for the point model and quantile models
+  lgbm_params:
+    n_estimators: 3000
+    learning_rate: 0.05
+    num_leaves: 63
+    min_child_samples: 20
+    subsample: 0.9
+    subsample_freq: 1
+    colsample_bytree: 0.9
+    reg_alpha: 0.1
+    reg_lambda: 0.1
+    random_state: 42
+    n_jobs: -1
+    verbosity: -1
+  early_stopping_rounds: 100
+  # Quantiles for the prediction interval shown in the app
+  quantiles: [0.10, 0.50, 0.90]
