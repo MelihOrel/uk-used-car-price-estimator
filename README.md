@@ -13,7 +13,7 @@ listings** (~99k raw) across 9 brands.
 **👉 [Try the live app](https://uk-used-car-price-estimator-g2phpxcgiruvdwahjiirso.streamlit.app/)**
 
 ![App screenshot](reports/figures/app_screenshot.png.png)
-*(screenshot placeholder — capture after first deploy)*
+
 
 Pick a brand → the model dropdown filters to that brand → enter year,
 mileage, transmission, fuel and engine size → get
